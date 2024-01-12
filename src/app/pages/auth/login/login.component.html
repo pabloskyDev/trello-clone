@@ -1,3 +1,38 @@
-<section class="w-screen h-screen bg-white relative p-4">
-  <p>login works!</p>
+<section class="w-screen h-screen relative">
+  <div
+    class="w-full h-full text-xs sm:grid sm:grid-cols-[25vw,1fr,25vw] bg-white text-primary sm:bg-gray-light overflow-y-auto">
+    <aside>
+      <img src="/src/assets/illustrations/login-organice.svg" alt="Login left image"
+        class="fixed w-72 left-0 bottom-0 sm:block hidden">
+    </aside>
+    <article class="p-4 flex flex-col gap-5">
+      <img src="/src/assets/imgs/logo-gradient-blue-trello.svg" alt="Trello logo" class="w-40 mx-auto">
+
+      <main class="bg-white p-4 w-[70vw] sm:shadow-md sm:w-full rounded-sm mx-auto">
+        <form novalidate class="flex flex-col gap-3">
+          <p class="font-semibold text-accent-light text-center text-sm">Iniciar sesión en Trello</p>
+          <input type="email" placeholder="Introduzca el correo electrónico"
+            class="w-full border border-primary-light bg-gray-light text-xs text-accent-light">
+          <button type="submit" class="bg-green text-white p-2 rounded-sm">Continuar</button>
+          <p class="text-center">o</p>
+          <button type="button" class="bg-white p-2 rounded-sm shadow font-medium hover:bg-gray-light">Continuar con
+            Google</button>
+          <button type="button" class="bg-white p-2 rounded-sm shadow font-medium hover:bg-gray-light">Continuar con
+            Microsoft</button>
+          <button type="button" class="bg-white p-2 rounded-sm shadow font-medium hover:bg-gray-light">Continuar con
+            Apple</button>
+          <button type="button" class="bg-white p-2 rounded-sm shadow font-medium hover:bg-gray-light">Continuar con
+            Slack</button>
+        </form>
+      </main>
+
+      <footer>
+
+      </footer>
+    </article>
+    <aside>
+      <img src="/src/assets/illustrations/login-note-list.svg" alt="Login right image"
+        class="fixed w-72 right-0 bottom-0 sm:block hidden">
+    </aside>
+  </div>
 </section>

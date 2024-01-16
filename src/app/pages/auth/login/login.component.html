@@ -3,36 +3,74 @@
     class="w-full h-full text-xs sm:grid sm:grid-cols-[25vw,1fr,25vw] bg-white text-primary sm:bg-gray-light overflow-y-auto">
     <aside aria-label="left-side">
       <img src="/src/assets/illustrations/login-organice.svg" alt="Login left image"
-        class="fixed w-72 left-0 bottom-0 sm:block hidden">
+        class="fixed w-52 left-0 bottom-0 sm:block hidden">
     </aside>
-    <article class="p-4 flex flex-col gap-5">
-      <img src="/src/assets/imgs/logo-gradient-blue-trello.svg" alt="Trello logo" class="w-40 mx-auto">
+    <article class="p-4 h-full flex flex-col justify-between">
+      <div class="flex flex-col gap-5">
+        <img src="/src/assets/imgs/logo-gradient-blue-trello.svg" alt="Trello logo" class="w-40 mx-auto">
 
-      <main class="bg-white p-4 w-[70vw] sm:shadow-md sm:w-full rounded-sm mx-auto">
-        <form novalidate class="flex flex-col gap-3">
-          <p class="font-semibold text-accent-light text-center text-sm">Iniciar sesión en Trello</p>
-          <input type="email" placeholder="Introduzca el correo electrónico"
-            class="w-full border border-primary-light bg-gray-light text-xs text-accent-light">
-          <button type="submit" class="bg-green text-white p-2 rounded-sm">Continuar</button>
-          <p class="text-center">o</p>
-          <button type="button" class="bg-white p-2 rounded-sm shadow font-medium hover:bg-gray-light">Continuar con
-            Google</button>
-          <button type="button" class="bg-white p-2 rounded-sm shadow font-medium hover:bg-gray-light">Continuar con
-            Microsoft</button>
-          <button type="button" class="bg-white p-2 rounded-sm shadow font-medium hover:bg-gray-light">Continuar con
-            Apple</button>
-          <button type="button" class="bg-white p-2 rounded-sm shadow font-medium hover:bg-gray-light">Continuar con
-            Slack</button>
-        </form>
-      </main>
+        <main class="bg-white p-4 w-[70vw] max-w-[320px] sm:shadow-md sm:w-full rounded-sm mx-auto flex flex-col gap-4">
+          <form novalidate class="flex flex-col gap-3">
+            <p class="font-semibold text-accent-light text-center text-sm">Iniciar sesión en Trello</p>
+            <input type="email" placeholder="Introduzca el correo electrónico"
+              class="w-full border border-primary-light bg-gray-light text-xs text-accent-light outline-[1px] outline-secondary-light">
+            <button type="submit" class="bg-green text-white p-2 rounded-sm">Continuar</button>
+            <p class="text-center">o</p>
+            <button type="button"
+              class="bg-white p-2 rounded-sm shadow font-medium flex gap-2 justify-center hover:bg-gray-light">
+              <app-icon name="google"></app-icon>
+              <span>Continuar con Google</span>
+            </button>
+            <button type="button"
+              class="bg-white p-2 rounded-sm shadow font-medium flex gap-2 justify-center hover:bg-gray-light">
+              <app-icon name="microsoft"></app-icon>
+              <span>Continuar con Microsoft</span>
+            </button>
+            <button type="button"
+              class="bg-white p-2 rounded-sm shadow font-medium flex gap-2 justify-center hover:bg-gray-light">
+              <app-icon name="mac-os"></app-icon>
+              <span>Continuar con Apple</span>
+            </button>
+            <button type="button"
+              class="bg-white p-2 rounded-sm shadow font-medium flex gap-2 justify-center hover:bg-gray-light">
+              <app-icon name="slack"></app-icon>
+              <span>Continuar con Slack</span>
+            </button>
+          </form>
+          <hr class="text-primary-light">
+          <div class="text-center">
+            <a href="#" class="text-blue block leading-5 hover:underline">¿No puede iniciar sesión?</a>
+            <a href="#" class="text-blue list-item list-inside leading-5 hover:underline">Regístrese para crear una
+              cuenta?</a>
+          </div>
+        </main>
+        <div class="text-center">
+          <a href="#" class="text-blue inline-block leading-5 hover:underline">Política de Privacidad </a>
+          <div class="inline-block pl-2">
+            <a href="#" class="text-blue leading-5 list-item list-inside hover:underline">Condiciones del Servicio</a>
+          </div>
+        </div>
+      </div>
 
-      <footer>
-
+      <footer class="flex flex-col gap-6 justify-center">
+        <hr class="text-primary-light w-full mx-auto max-w-sm">
+        <img src="/src/assets/imgs/horizontal-logo-onecolor-blue-atlassian.svg" alt="Atlasian logo"
+          class="w-32 mx-auto">
+        <ul class="text-accent-light flex flex-wrap gap-x-2 justify-center">
+          <li>Plantillas</li>
+          <li>Precios</li>
+          <li>Aplicaciones</li>
+          <li>Trabajos</li>
+          <li>Blog</li>
+          <li>Desarrolladores</li>
+          <li>Acerca de</li>
+          <li>Ayuda</li>
+        </ul>
       </footer>
     </article>
     <aside aria-label="right-side">
       <img src="/src/assets/illustrations/login-note-list.svg" alt="Login right image"
-        class="fixed w-72 right-0 bottom-0 sm:block hidden">
+        class="fixed w-52 right-0 bottom-0 sm:block hidden">
     </aside>
   </div>
 </section>

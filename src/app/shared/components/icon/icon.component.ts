@@ -30,7 +30,6 @@ export class IconComponent implements OnInit {
   ngOnInit(): void {
     if (!this.name) throw new Error(`Icon ${this.name} not found`);
     this.class = this.customClass || 'w-4 h-4';
-    console.log(this.class);
     const iconTrimName = `${this.name}_${this.class.replaceAll(' ', '')}`;
     const iconCache = this.iconService.getIconFromCache(iconTrimName);
     iconCache != undefined ? this.loadFromCache(iconCache) : this.getIconFromCache(this.name, iconTrimName);

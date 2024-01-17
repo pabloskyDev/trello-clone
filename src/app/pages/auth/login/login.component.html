@@ -14,28 +14,26 @@
             <p class="font-semibold text-accent-light text-center text-sm">Iniciar sesión en Trello</p>
             <input type="email" placeholder="Introduzca el correo electrónico"
               class="w-full border border-primary-light bg-gray-light text-xs text-accent-light outline-[1px] outline-secondary-light">
-            <button type="submit" class="bg-green text-white p-2 rounded-sm">Continuar</button>
+            <app-button [typeBtn]="'submit'" color="primary">
+              Continuar
+            </app-button>
             <p class="text-center">o</p>
-            <button type="button"
-              class="bg-white p-2 rounded-sm shadow font-medium flex gap-2 justify-center hover:bg-gray-light">
+            <app-button color="white">
               <app-icon name="google"></app-icon>
               <span>Continuar con Google</span>
-            </button>
-            <button type="button"
-              class="bg-white p-2 rounded-sm shadow font-medium flex gap-2 justify-center hover:bg-gray-light">
+            </app-button>
+            <app-button color="white">
               <app-icon name="microsoft"></app-icon>
               <span>Continuar con Microsoft</span>
-            </button>
-            <button type="button"
-              class="bg-white p-2 rounded-sm shadow font-medium flex gap-2 justify-center hover:bg-gray-light">
+            </app-button>
+            <app-button color="white">
               <app-icon name="mac-os"></app-icon>
               <span>Continuar con Apple</span>
-            </button>
-            <button type="button"
-              class="bg-white p-2 rounded-sm shadow font-medium flex gap-2 justify-center hover:bg-gray-light">
+            </app-button>
+            <app-button color="white">
               <app-icon name="slack"></app-icon>
               <span>Continuar con Slack</span>
-            </button>
+            </app-button>
           </form>
           <hr class="text-primary-light">
           <div class="text-center">
